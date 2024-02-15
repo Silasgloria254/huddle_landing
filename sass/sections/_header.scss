@@ -1,0 +1,36 @@
+@use "../utilities/mixin"  as *;
+@use "../utilities/variable"  as *;
+.header{
+    background:url("../../images/bg-hero-desktop.svg") ;
+    
+}
+.header__nav{
+    @include flex(space-between,center);
+}
+.btn__nav{
+    background-color:$very-pale-cyan;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 50px;
+    color:gray ;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 0 2px white;
+  }
+.hero{
+    @include flex(center,center);
+    gap:3em;
+    
+}
+.btn__hero{
+    background-color: plum;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 50px;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
