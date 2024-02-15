@@ -1,0 +1,7 @@
+@use "../utilities/mixin" as *;
+.grow{
+    
+    &__content{
+        @include flex(space-between, center);
+    }
+}
