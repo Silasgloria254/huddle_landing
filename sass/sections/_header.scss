@@ -21,10 +21,11 @@
 .hero{
     @include flex(center,center);
     gap:3em;
+    flex: 1;
     
 }
 .btn__hero{
-    background-color: plum;
+    background-color: $Pink;
     padding: 1em 2em;
     border: none;
     border-radius: 50px;
