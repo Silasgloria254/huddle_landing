@@ -6,6 +6,7 @@
   background-color: $very-dark-cyan;
   color:$white;
   height: 80vh;
+  padding-top: 2em;
 }
 .footer__content {
   @include flex(space-between,center);
@@ -49,4 +50,12 @@ list-style-type: none;
 }
 .footer__content--right {
   line-height: 2;
+
+}
+.footer__content--right p{
+  margin-top: 50px;
+}
+.footer__content--right img:hover{
+  background-color: $pink;
+  cursor: pointer;
 }
