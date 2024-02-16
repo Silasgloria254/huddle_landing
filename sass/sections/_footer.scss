@@ -1,0 +1,61 @@
+@use "../utilities/mixin" as *;
+@use "../utilities/variable" as *;
+
+
+.footer{
+  background-color: $very-dark-cyan;
+  color:$white;
+  height: 80vh;
+  padding-top: 2em;
+}
+.footer__content {
+  @include flex(space-between,center);
+margin-top: 4em;
+padding: 20px 10px;
+
+// gap:2em;
+}
+.footer__content__left--section{
+  @include flex(space-evenly,center);
+  gap:2em;
+  line-height: 1.5em;
+}
+.footer__content--left, .footer__content--center, .footer__content--right{
+  flex: 1;
+}
+.footer__content--left .footer-logo{
+
+  filter: brightness(0);
+  filter:invert(1);
+}
+.footer__content__left--section{
+  @include flex(flex-start,center);
+  padding-top: 2em;
+}
+.footer__content--center{
+  @include flex(space-evenly, center);
+  line-height: 2;
+}
+.footer__content__center--section ul{
+list-style-type: none;
+}
+.footer__content__center--section ul li a{
+  text-decoration: none;
+  color: $white;
+  gap: 2em;
+}
+.footer__content__center--section ul li a:hover {
+  text-decoration: underline;
+  color: $white;
+}
+.footer__content--right {
+  line-height: 2;
+
+}
+.footer__content--right p{
+  margin-top: 50px;
+}
+.footer__content--right img:hover{
+  background-color: $pink;
+  cursor: pointer;
+}
