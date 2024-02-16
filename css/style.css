@@ -59,6 +59,7 @@
   background-color: hsl(192, 100%, 9%);
   color: #fff;
   height: 80vh;
+  padding-top: 2em;
 }
 
 .footer__content {
@@ -125,4 +126,13 @@
 
 .footer__content--right {
   line-height: 2;
+}
+
+.footer__content--right p {
+  margin-top: 50px;
+}
+
+.footer__content--right img:hover {
+  bcolor: palevioletred;
+  cursor: pointer;
 }
